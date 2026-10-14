@@ -1,0 +1,140 @@
+
+<!DOCTYPE html><html dir="ltr"><head>
+        <title></title>
+    </head>
+    <body onload="checkCookie()">
+        <div class="club8">
+        <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" name="IRFORM" onsubmit="return validateForm()">
+            <div class="row8">
+            <div class="box8 f-label"><b>Leads Llamadas - Gardner Denver</b></div>
+            <div class="box8 f-label"><u><em><strong class=""><br></strong></em></u></div>
+            <div class="box8 f-label">Nombre*</div>
+            <div class="box8"><input maxlength="40" name="first_name" size="20" type="text" required="" class=""></div>
+            </div>
+            <div class="row8">
+            <div class="box8 f-label">Apellido*</div>
+            <div class="box8"><input maxlength="40" name="last_name" size="20" type="text" required="" class=""></div>
+            </div>
+            <div class="row8">
+            <div class="box8 f-label">Compañía*</div>
+            <div class="box8"><input maxlength="40" name="company" size="20" type="text" required="" class=""></div>
+            </div>
+            <div class="row8">
+            <div class="box8 f-label">País</div>
+            <div class="box8"><select required="" name="country">
+            <option value="">Seleccione</option>
+            <option value="AR">ARGENTINA</option>
+            <option value="CL">CHILE</option>
+            <option value="UY">URUGUAY</option>
+            <option value="PE">PERU</option>
+            <option value="BO">BOLIVIA</option>
+            <option value="PY">PARAGUAY</option>
+            <option value="CO">COLOMBIA</option>
+            <option value="HN">HONDURAS</option>
+            <option value="CR">COSTA RICA</option>
+            <option value="PR">PUERTO RICO</option>
+            <option value="GT">GUATEMALA</option>
+            <option value="PA">PANAMA</option>
+            <option value="VE">VENEZUELA</option>
+            <option value="DO">DOMINICAN REPUBLIC</option>
+            <option value="MX">MEXICO</option>
+            </select></div>
+            </div>
+            <div class="row8">
+            <div class="box8 f-label"><strong class="" style="border-style: none;">Código Postal<sup>*</sup></strong></div>
+            <div class="box8"><input maxlength="40" name="zip" size="20" type="text" required=""></div>
+            </div>
+            <div class="row8">
+            <div class="box8 f-label">Email<sup>*</sup></div>
+            <div class="box8"><input maxlength="40" name="email" size="20" type="email" required="" class=""></div>
+            </div>
+            <div class="row8">
+            <div class="box8 f-label">Teléfono<sup>*</sup></div>
+            <div class="box8"><input maxlength="40" name="phone" size="20" type="tel" required=""></div>
+            </div>
+            <div class="row8">
+            <div class="box8 f-label" style="border-style: none;">Tipo de Solicitud<sup>*</sup></div>
+            <div class="box8"><select name="InquiryType__c" label="Inquiry Type" class="selectInput defaultText" required="">
+            <option value="">Seleccione</option>
+            <option value="Quote">Cotización de Equipo </option>
+            <option value="Service">Solicitud de Servicio</option>
+            <option value="Information">Solicitud de Información</option>
+            <option value="P_O">Solicitud de Piezas y Aceite</option>
+            <option value="Tsupport">Solicitud de Soporte Técnico</option>
+            <option value="MDoc">Solicitud de Documentación faltante</option>
+            <option value="MO">Solicitud de Revisión de Equipo</option>
+            <option value="Warranty">Pergunta sobre Garantía</option>
+            <option value="AA_SC">Solicitud de Auditoría de Aire o Contrato de Servicio</option>
+            </select></div>
+            </div>
+         
+            <div class="row8">
+            <div class="box8 f-label">Descripción<sup>*</sup></div>
+            <div class="box8"><textarea rows="4" cols="23" name="description" required="" class=""></textarea></div>
+            </div>
+            <div class="row8">
+            </div>
+            <div class="row8">
+            <div class="box8 f-label" style="border-style: none;">Origen del Lead<sup>*</sup></div>
+            <div class="box8"><select name="Lead_Source_1__c" label="Lead Type" class="selectInput defaultText" required="">
+            <option value="">Seleccione</option>
+            <option value="Marketing Phone Call">Llamada Telefónica</option>
+            </select></div>
+            </div>
+            <div class="row8">
+            <div class="row8">
+            <div class="box8 f-label" style="border-style: none;">Categoría del Producto<sup class="">*</sup></div>
+            <div class="box8"><select name="00N3a00000CehGP" label="Product Category" class="selectInput defaultText" required="">
+            <option value="">Seleccione</option>
+            <option value="Blower">Soplador</option>
+            <option value="Compressor">Compresor</option>
+            <option value="Vacuum">Vacío</option>
+            <option value="Air Treatment/Dryer">Tratamiento de aire</option>
+            <option value="High Pressure">Alta presión</option>
+            </select></div>
+            <div class="box8 f-label"><div class=""><span style="vertical-align: super;">Industria*</span></div></div>
+            <div class="box8"><select id="industry" name="industry" class="selectInput defaultText" required="">
+            <option value="">Seleccione</option>
+            <option value="General Manufacturing">Industria General</option>
+            <option value="Aerospace">Aeroespacial</option>
+            <option value="Agriculture">Agricultura</option>
+            <option value="Chemical &amp; Petrochemical">Química y Petroquímica</option>
+            <option value="Mining &amp; Construction">Minería y Construcción</option>
+            <option value="Electronics &amp; Semiconductors">Eletrónica y Semiconductores</option>
+            <option value="Power Generation">Generación de Energía</option>
+            <option value="Food &amp; Beverage">Alimentos y Bebidas</option>
+            <option value="Marine">Industria Naval</option>
+            <option value="Textiles">Industria Textil</option>
+            <option value="Automotive">Automotriz</option>
+            <option value="Oil &amp; Gas">Petrolera y de Gas</option>
+            <option value="Pharmaceutical">Farmacéutica</option>
+            <option value="Plastics">Plástico</option>
+            <option value="Pulp &amp; Paper">Pulpa y Papel</option>
+            <option value="Transport &amp; Logistics">Transporte y Logística</option>
+            <option value="Raw Materials">Materias Primas</option>
+            <option value="Environmental/Wastewater">Medio Ambiente y Aguas Residuales</option>
+            <option value="Printing">Impresión</option>
+            <option value="Medical">Médica</option>
+            <option value="Laboratory">Laboratorio</option>
+            <option value="Engineering, Machinery &amp; Equipment Maufacturing">Ingeniería, maquinaria y fabricación de equipos</option>
+            <option value="Academia, Sciences &amp; Education">Academia, Ciencias y Educación</option>
+            <option value="Others">Otras</option>
+            </select></div>              
+            <div class="box8">&nbsp;</div>
+            </div>
+            <!-- <div class="row8 c-label">
+            <input type="checkbox" class="c-label" style="margin-right: 10px;" name="Legal approval to store personal data" label="I authorize Ingersoll Rand to store all data reported above, including my personal data. Your data will be stored in order to fulfill your request in this contact form. " required>I authorize Ingersoll Rand to store all data reported above, including my personal data. Your data will be stored in order to fulfill your request in this contact form.
+ 
+        </div>
+        <div class="row8 c-label">
+            <input type="checkbox" class="c-label" style="margin-right: 10px;" name="Want to receive our communications" label="I want to receive Ingersoll Rand communications, including commercial promotions, marketing campaigns, technical bulletins and others; ">I want to receive Ingersoll Rand communications, including commercial promotions, marketing campaigns, technical bulletins and others;
+        </div>-->         <input type="hidden" name="oid" value="00Dj0000001qiyo">         <input type="hidden" name="retURL" value="https://www.gardnerdenver.com">       <input type="hidden" name="SBU_ID_Workflow__c" value="NA Air">     <input type="hidden" name="lead_source" value="Inbound Call">  <input type="hidden" name="Lead_Source_3__c" id="l3value">         <input type="hidden" name="Lead_Source_4__c" id="l4value"> <input type="hidden" name="Lead_Source_2__c" value="FEHU"> <input type="hidden" name="recordType" id="recordType" value="0123a00000117pp">
+            <div class="row8"><input type="submit" name="submit" class="buttonStyle" value="Enviar"></div>
+            <div class="row8">&nbsp;</div>
+            <div class="row8">&nbsp;</div>
+            <div class="row8">&nbsp;</div>
+            </div>
+        </form>
+        </div>
+   
+<style>img.elq-gen-NoDisplay { display:none; }</style><img class="elq-gen-NoDisplay" src="https://s804077455.t.eloqua.com/visitor/v200/svrGP?pps=60&siteid=804077455&PURLSiteID=5&optin=disabled&PURLSiteAlternateDNSID=0&LandingPageID=33691&PURLRecordID=0&PURLGUID=2425C600139C455D8CF820D0F8DBA210&UseRelativePath=True&elq=%7B00000000-0000-0000-0000-000000000000%7D&firstPartyCookieDomain=trk.irco.com&elqGUID=2425c600-139c-455d-8cf8-20d0f8dba210&elq_ck=0%22 border=0 width=1 height=1 alt=""></body></html>
